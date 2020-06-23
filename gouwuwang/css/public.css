@@ -1,0 +1,163 @@
+*{padding: 0; margin: 0;}
+body{font-size: 12px;font-family: "微软雅黑", "新宋体";}
+/*顶部的框*/
+.top{height: 21px;width: 100%;background-color: #f9f9f9;}
+.top_z{width: 980px;height: 21px;background: #F9F9F9;color: #666;position: relative;margin: 0 auto;}
+.top_z a{color: #666; text-decoration: none;}
+.top_z a:hover{color: red;text-decoration: underline}
+.top_list{height: 21px;line-height: 21px;text-align: center;display: inline;}
+.dl{margin-left: 13px;}
+.dd{margin-left: 154px;}
+/*一级菜单*/
+.mkl{width: 90px;background-image: url(../images/fll_redsanjiao.gif);background-repeat: no-repeat;background-position: 80px 8px;position: absolute;left: 410px;}
+/*二级菜单样式*/
+.mkl ul{list-style: none; float: left; position: absolute; left: 10px; display: none;border: solid 1px #e4e4e4;width: 80px;z-index: 3;background-color: #fff;}
+/*鼠标放在一级菜单上显示二级菜单*/
+.mkl:hover ul{display: block;}
+/*二级菜单中鼠标放上去的样式*/
+.mkl ul li a:hover{color: #666666;text-decoration: underline}
+.list{width: 340px;position: absolute;top: 1px;left: 505px;}
+.list ul li{list-style: none;float: left; margin-right: 15px;}
+.kfrx{position: absolute;top: 0px;left: 845px;}
+/*logo 框*/
+.logo_k{height: 82px;position: relative;margin: 0 auto;width: 980px;}
+.logo{width: 270px;height: 62px;background-image: url(../images/fll_logo.gif) ;background-repeat: no-repeat;position: absolute;top: 10px;left: 4px;}
+/*购物车*/
+.gwc{width: 130px;height: 26px; background-image: url(../images/fll_gwc.gif); background-repeat: no-repeat;position: absolute; padding-left: 35px;line-height: 26px; left: 814px;top: 20px;}
+.gwc .gwc_1 a{color: #666;text-decoration: none;}
+.gwc_2{position: absolute;top: 3px;right: 5px;}
+/*导航框*/
+.nav{height: 34px;width: 100%;background-color:#9c2626;}
+.dh{width: 968px;margin: 0 auto;height: 34px;background-image: url(../images/fll_menubg.gif);padding-left: 12px;padding-top: 3px;}
+.dh ul li{float: left; list-style-type: none;height: 34px;line-height: 31px;text-align: center;width: 80px;margin-right: 8px;}
+.dh ul li a{text-decoration: none;font-size: 14px;color: #fff;font-weight: bold;} 
+.nav li a:hover{color: #990000;background-image: url(../images/fll_xzk.gif);display: block;background-repeat: no-repeat;}
+.sy{background-image: url(../images/fll_dqk.gif);background-repeat: no-repeat;}
+/*女装下拉菜单*/
+#nz .nzxlcd{line-height: normal;display:none;width: 787px;height: 278px;background-color: #FFF;border-left: solid 3px #9b0000; border-right: solid 3px #9b0000;border-bottom: solid 3px #9b0000;color: #990000;position: absolute;top: 137px;left: 260px;z-index: 3;padding-left: 7px;}
+ .sz_list{width: 120px;float: left;height: 250px;}
+ .xz_list{width: 120px;float: right;height: 250px;}
+#nz .nzxlcd p{text-align: left;font-weight: bold;height: 20px;line-height: 20px;}
+.nz_k1{margin: 12px 0px;width: 240px;height: 250px;float: left;}
+.nz_k1 ul li{list-style: inside;margin-top: 5px;text-align: left;width: 120px;height: 15px;}
+#nz .nzxlcd a{color: #990000;text-decoration: none;font-size: 12px;font-weight: normal;}
+#nz .nzxlcd a:hover{text-decoration: underline;}
+#nanz .nanzxl a:hover{text-decoration: underline;}
+ .pp_k2{width: 340px;height: 253px;background-color: #f9f9f9;float: left;padding: 12px 7px;line-height: normal;}
+ .cx_k3{text-align: left; width: 180px;height: 278px;float: right;padding-left: 10px;margin-top: 20px;}
+ .cx_k3 ul li { line-height: normal; text-align: left;width: 200px;height: 20px;}
+#nz:hover .nzxlcd{display: block;}
+
+/* 男装下拉菜单 */
+#nanz:hover .nanzxl{display: block;}
+#nanz .nanzxl{  width: 794px;height: 278px;background-color: #FFF;border-left: solid 3px #9b0000;border-right: solid 3px #9b0000;border-bottom: solid 3px #9b0000;color: #990000;position: absolute;top: 137px;left: 290px;z-index: 3;padding-left: 7px;display: none;}
+#nanz .nanzxl a{color: #990000;text-decoration: none;font-size: 12px;font-weight: normal;}
+#nanz .nanzxl p{text-align: left;font-weight: bold;height: 20px;}
+
+/*阴影图片*/
+.yyk{width: 100%;height: 5px;background-image: url(../images/fll_menuyy.gif);background-repeat: repeat-x;}
+/*小导航*/
+.xdh{width: 980px;height: 29px;margin: 0 auto;position: relative;}
+.xdh ul{width: 700px;height: 15px;list-style: none;position: relative;top: 9px;left: 19px;}
+.xdh ul li{float: left;margin-right: 26px;}
+.xdh ul li a{text-decoration: none;color: #990000}
+.xdh ul li a:hover{text-decoration: underline;}
+/*搜索框*/
+.ssk{width: 195px;height: 25px;float: right;position: absolute;top: 0px;right: 0px;}
+.ssk_1{background-image: url(../images/fll_serchbg.gif);background-repeat: no-repeat;width: 140px;height: 25px;}
+#sousuo{width: 120px;height: 15px; border: none;margin: 3px 0px 0px 21px; color: #999999;}
+.ssk_2 {position: absolute;right: 3px;top: 0px;}
+.ssk_2 img{height: 23px;}
+/*主体部分*/
+.zt{width: 980px;margin: 0 auto;}
+.zt a{color: #666;text-decoration: none;}
+.zt a:hover{text-decoration: underline;color: #666;} 
+/*广告图框*/
+.ggt{height: 440px;width: 980px;position: relative;}
+.ggt_1{height: 52px;}
+.ggt_2{width: 728px;height: 368px;border: solid 1px #e4e4e4;position: absolute;bottom:0px ;left: 0px;}
+.ggt_3{width: 238px;height: 165px; border: solid 1px #e4e4e4;position: absolute;top: 70px; right: 0px;color: #cc0000;}
+.ggt_4{width: 238px; height: 191px;border: solid 1px #e4e4e4;position: absolute;bottom: 0px;right:0px;}
+/*ggt_3框*/
+.ggt_3 dd {float: left;height: 30px;line-height: 30px;width: 79px;text-align: center;cursor: pointer;}
+.ggt_3 dd:hover{background-color: #f5f5f5;}
+.rmcx:hover .rmcx_tu{display: block;}
+.rmcx_tu{display: none;}
+.wzgg_list{width: 220px;height: 135px;margin-left: -55px;display: none;}
+.wzgg_list ul li , .xwzx_list ul li{float: left;line-height: 26px;color: 990000;}
+.wzgg:hover .wzgg_list{display: block;}
+.xwzx_list{width: 220px;height: 135px;margin-left: -132px;display: none;}
+.xwzx:hover .xwzx_list{display: block;}
+
+
+
+
+/*商品分类框*/
+.spfl{width: 980px;height: 550px;margin-top: 25px;position: relative;color: #a37232;}
+.spfl_left{width: 728px; height: 550px; border: solid 1px #e4e4e4; position: relative;}
+.spfl_right{width: 238px; height: 550px; border: solid 1px #e4e4e4; line-height: 20px;position: absolute;top: 0px;right: 0px;}
+/*商品分类框左边的div里的内容*/
+.spfl_img{background-image: url(../images/fll_spfltoubg.gif);background-repeat: no-repeat;width: 724px;height: 32px;border-bottom: solid #e4e4e4 1px;text-align: right;line-height: 32px;}
+/*左边的统一文字*/
+.zczt{width: 60px; float: left;height: 22px;line-height: 22px;}
+/*商品分类所有的ul li 处理*/
+.liebiao ul  {height: 22px;line-height: 22px;}
+.liebiao ul li{float: left;list-style-image: url(../images/fll_liststyle.gif);margin-right: 15px;}
+/*商品分类里所有的框*/
+.liebiao{border-bottom: solid 1px #f6f6f6;height:132px;padding: 12px 0px 0px 9px ;width: 719px;}
+/*女装框*/
+.nvz{width: 654px;float: right;height: 132px;}
+/*男装，鞋包，内衣，美容框*/
+.nanz ,.xb,.ny,.mr{width: 349px;float: left;}
+.nanz_1,.xb_1{width: 289px;height: 88px;float: right;}
+.neiy,.meir{width: 289px;height: 66px;float: right;}
+/*母婴童装，配饰，家居，保健运动框*/
+.mytz,.ps,.jj,.bjyd{width: 370px;float: right;}
+.mytz_1,.ps_1{width: 310px;height: 88px;float: right;}
+.jiaj,.baojyd{width: 310px;height: 66px;float: right;}
+/*热点活动*/
+.rdhd{width: 238px;height: 33px;background-image: url(../images/fll_flggtoubg.gif);background-repeat: no-repeat;border-bottom: solid 1px #f6f6f6;}
+.spfl_right p{margin: 15px 0px;}
+.wzlb li {list-style: inside square;margin-left: 6px;}
+.tplb {margin-left: 6px;}
+.tplb  li{list-style: none;float: left;width: 116px;height: 120px;}
+/*畅销精品框*/
+.cxjp{width: 980px;height: 552px;}
+.cxjp_img{width: 134px;height: 18px;background-image: url(../images/fll_disbox1toubg.gif);background-repeat: no-repeat;border-bottom: solid 2px #757a90;padding: 20px 0px 0px 846px;}
+.cxjp_zs{width: 980px;height: 512px;}
+.cxjp_zs ul li{float: left;list-style: none;}
+/*新品速递框*/
+.xpsd{width: 980px;height: 370px;position: relative;}
+.xpsd_img{width: 730px;height: 41px;background-image: url(../images/fll_disbox2toubg.gif);background-repeat: no-repeat;border-bottom: solid 2px #cc0000;text-align: right;line-height: 41px;}
+.xpsd_right1{border: solid 1px #e4e4e4;width: 238px;height: 166px;position: absolute;right: 0px;top: 15px;}
+.xpsd_right2{border: solid 1px #e4e4e4;width: 238px;height:166px;position: absolute;right: 0px;bottom: 14px;}
+.right1_img{height: 23px;width: 238px;background-image:url(../images/fll_disbox2right1toubg.gif) ;background-repeat: no-repeat;}
+.right1_img img{float: right;}
+.right2_img{width: 238px;height: 23px;background-image: url(../images/fll_disbox2right2toubg.gif);background-repeat: no-repeat;}
+
+/*潮流女装框  潮流鞋包框  母婴童装框 潮流男装框*/
+.kuang1{width: 978px;height: 660px;border: solid 1px #e4e4e4;}
+.clnz_img{width: 675px;height: 27px;background-image:url(../images/fll_disbox3toubg.gif) ; background-repeat: no-repeat;padding: 30px 0px 0px 303px;line-height: 27px;text-align: center;}
+.mytz_img{width: 465px; height: 27px;background-image: url(../images/fll_disbox5toubg.gif);background-repeat: no-repeat;padding: 25px 0px 0px 515px;line-height: 27px;text-align: center;}
+.clnz_img ul li,.mytz_img ul li{float: left; list-style: none;width: 45px;}
+.kuang1_gg,.kuang2_gg{width: 978px;height: 600px;position: relative;}
+.kuang1_left{margin: 25px 10px; position: absolute;left: 0px;}
+.kuang1_right{width: 760px;position: absolute;right: 0px;margin-top: 5px;}
+.kuang1_right ul li,.kuang2_left ul li{float: left;width: 190px;height: 300px;list-style: none;}
+.kuang1_right ul li div,.kuang2_left ul li div{height:20px ;line-height: 20px;width: 190px;text-align: center;}
+
+.kuang2{width: 978px;height: 660px;border: solid 1px #e4e4e4;}
+.clxb_img{width: 675px;height: 27px;background-image:url(../images/fll_disbox4toubg.gif) ;background-repeat: no-repeat;padding: 25px 0px 0px 303px;line-height: 27px;text-align: center;}
+.clnanz_img{width: 465px; height: 27px;background-image: url(../images/fll_disbox6toubg.gif);background-repeat: no-repeat;padding: 25px 0px 0px 515px;line-height: 27px;text-align: center;}
+.clxb_img ul li,.clnanz_img ul li{float: left; list-style: none;width: 45px;}
+.kuang2_left{width: 760px;position: absolute;left: 0px;margin-top: 5px;}
+.kuang2_right{margin: 25px 10px; position: absolute;right: 0px;}
+.kuang1 span,.kuang2 span{color: red;}
+/*底部*/
+.db{width: 980px;margin: 0px auto;}
+.yj{padding: 10px;border-bottom:solid #999 1px ;}
+.db_list{width: 980px;height: 185px;background-image: url(../images/fll_link.gif);background-repeat: no-repeat;}
+.db_list ul{float: left;padding: 65px 0px 0px 60px;margin-left: 5px;}
+.db_list ul li{list-style: none;width: 130px;height: 21px;text-align: left;line-height: 21px;}
+.db a{color: #999;text-decoration: none;}
+.dz{width: 980px;text-align: center;height: 20px;line-height: 20px;margin: 10px;}

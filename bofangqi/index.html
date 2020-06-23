@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Document</title>
+	<script type="text/javascript">
+
+
+
+        //播放
+        function hg(a){
+        	var audio=document.getElementById('audio');
+        	aud.src='mp3/'+a;
+        	myimg=document.getElementById("myimg");
+        	myimg.src="img/zt.png"
+        	if(audio.pause){
+				audio.play();
+			}	
+        }   
+        //暂停播放图标切换
+        function changeimg(){
+        	myimg=document.getElementById("myimg");
+        	if(myimg.src.match("zt")){//检索 <img src="img/zt.png" id="myimg" onclick="changeimg()" /> 里面 src 属性的值有没有包含zt这个字符串，如果存在字符串zt，图片 src 更新为 bf.gif，若匹配不到zt字符串，src 则更新为 zt.gif
+        		myimg.src="img/bf.png";
+        		var audio=document.getElementById('audio');
+	        	if(audio.played){ //
+	        		audio.pause();//调用暂停函数
+        	    }
+
+        	}
+        	else{
+        		myimg.src="img/zt.png";
+        		var audio=document.getElementById('audio');
+	        	if(audio.paused){
+	        		audio.play();//调用播放
+	        	}
+        	}
+       }
+        
+        //下一首
+        var musicindex=0;//音乐索引
+	    var musics=new Array("wj.mp3","xzgn.mp3","mby.mp3","qqbl.mp3");//音乐数组
+        function next(){ 
+			musicindex++;
+			if(musicindex>=musics.length){//如果音乐索引超过长度将其清零
+				musicindex=0;
+			}
+			audio.src="mp3/"+musics[musicindex];
+			audio.play();
+        }
+        //上一首
+         function prev(){ 
+			musicindex--;
+			if(musicindex<0){
+				musicindex=musics.length-1;
+			}
+			audio.src="mp3/"+musics[musicindex];
+			audio.play();
+        }
+//       //读取音乐
+//        function getMusic(){
+//        	var aud=document.getElementById('audio');
+//			  aud.src="mp3/"+musics[musicindex];//改变音乐的SRC
+//          }
+        
+        
+        
+        
+        
+        
+        
+	</script>
+	<style type="text/css"> 
+	*{padding: 0;margin: 0;}
+	body{
+		background-image: url(../cj/img/bj.jpeg);
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    background-size: 100%;
+	    overflow: auto;
+	    height: 100vh;
+	    
+	    }
+	.k {width: 400px;height: 800px; margin-left: 300px;}
+	.bfq{text-align: center;padding-top: 10px;}
+	.btn {text-align: center;}
+	.tb {text-align: center;}
+	.tb img {margin: 15px;}
+	ul li {margin: 10px; list-style: none;height: 50px;width: 400px;text-align: center;line-height: 50px;}
+	ul li a{text-decoration: none; color: black;cursor: pointer;}
+	</style>
+</head>
+
+<body style="background-image: url(img/bj.jpeg);">
+	<div class="k">
+		<div class="bfq">
+			<audio id="audio" controls="controls" src="mp3/wj.mp3" hidden="hidden"></audio>
+	   </div>
+	   <!--图标-->
+		<div class="tb">
+			<img src="img/shang.png" width="25px" id="previmg" onclick="prev()" />
+			<img src="img/bf.png" width="25px" id="myimg" onclick="changeimg()" />
+			<img src="img/next.png" width="25px" id="nextimg" onclick="next()"/>
+			<!--<p>点击换图标</p>-->
+		</div>
+		<ul>
+			<li>
+				<a id="xzgn" onclick="hg('wj.mp3')">无羁</a>
+			</li>
+			<li>
+				<a id="xzgn" onclick="hg('xzgn.mp3')">小镇姑娘</a>
+			</li>
+			<li>
+				<a id="mby" onclick="hg('mby.mp3')">马步谣</a>
+			</li>
+			<li>
+				<a id="qqbl" onclick="hg('qqbl.mp3')">全球变冷</a>
+			</li>
+		</ul>
+		
+	</div>
+	
+	
+</body>
+</html>

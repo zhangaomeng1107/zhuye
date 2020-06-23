@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>抽奖系统</title>
+</head>
+<style>
+	*{margin: 0; padding: 0;}
+	.k {height: 500px;width: 500px;margin: 50px auto;}
+	.light{width:150px;height: 150px;background-color: black !important;} 
+	.k ul li {float: left;margin: 5px;list-style: none;line-height: 150px;text-align: center;width: 150px;height: 150px;margin: 5px;position: relative;}
+    .bjt{display: block;width: 150px; float: left; height: 35px;position: absolute;z-index: 1;left: 0px;}
+    .k p{width: 150px;height: 35px;line-height: 35px; text-align: center;position: absolute;z-index: 2;bottom: 0px;left: 0px;font-size: 14px;color: #FFFFFF;}
+    .k li img{height: 150px;width: 150px;}
+    .k li button{padding: 8px;margin: 5px;font-size: 16px;}
+</style>
+<body>
+
+	<div class="k">
+		<ul>
+			<li><img src="img/dj1.png" /><p class="bjt"></p><p>亚丝娜手办</p></li>
+			<li><img src="img/zz.png" /><p class="bjt"></p><p>佐助手办</p></li>
+			<li><img src="img/lf.png" /><p class="bjt"></p><p>路飞手办</p></li>
+			<li><img src="img/yhy.png" /><p class="bjt"></p><p>樱花音手办</p></li>
+			<li>
+				<button id="btn1">开始</button>
+				<button id="btn2">停止</button>
+			</li>
+			<li><img src="img/lg.png"><p class="bjt"></p><p>绿谷手办</p></li>
+			<li><img src="img/mr.png" /><p class="bjt"></p><p>鸣人手办</p></li>
+			<li><img src="img/hz.png" /><p class="bjt"></p><p>黑子手办</p></li>
+			<li><img src="img/cy.png" /><p class="bjt"></p><p>初音手办</p></li>
+		</ul>
+	</div>
+</body>
+<script type="text/javascript">
+	var arr=[0,1,2,5,8,7,6,3];
+	//document.write(arr[4]);
+	var btn1=document.getElementById('btn1');
+	var btn2=document.getElementById('btn2');
+	var lis=document.getElementsByTagName('li');
+    var timer;
+    var num=0;
+//	console.log(lis[0]);
+    btn1.onclick=function(){
+    	btn1.disabled=true;
+    	timer=setInterval(function(){
+    		lis[arr[num]].className="";
+    		num++;
+    		if(num>7){
+    		    num=0;
+	        }
+    	lis[arr[num]].className="light";
+    	}, 100);
+    }
+    	btn2.onclick=function(){
+    		btn1.disabled=false;
+    		clearInterval(timer);
+    		alert("恭喜你获得只抽着玩玩不能领取的"+lis[arr[num]].innerText);
+    	}
+
+	
+</script>
+
+
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>管理控制台</title>
+	<link href="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+	<script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.js"></script>
+	<script src="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/js/bootstrap.js"></script>
+</head>
+<style type="text/css">
+	.col-md-2 {background-color: #ddd; height: 700px;}
+	.sbf p{font-size: 30px;font-weight: bold;color: #5a5a5a;border-bottom: 1px solid #eee;}
+	.bj{color:#fff;background-color: #ddedf6;border-radius: 4px;}
+	.lb li{float: none;margin-top: 10px;}
+	.col-md-2 ul{padding-top: 20px;}
+	.col-md-2  li{margin-top: 10px;}
+	.col-md-2 a{text-decoration: none;}
+</style>
+<body>
+	<!--导航-->
+	<nav class=" navbar-inverse" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">管理系统</a>
+			</div>
+			<div>
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">首页</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">功能 <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">查找</a></li>
+							<li><a href="#">选择</a></li>
+							<li><a href="#">Jasper Report</a></li>
+							<li class="divider"></li>
+							<li><a href="#">分离的链接</a></li>
+							<li class="divider"></li>
+							<li><a href="#">另一个分离的链接</a></li>
+						</ul>
+					</li>
+					<li><a href="#">帮助</a></li>
+				</ul>
+			</div>
+			<form class="navbar-form navbar-right" role="search">
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="用户名...">
+				</div>
+				<form class="navbar-form navbar-left" role="search">
+					<div class="form-group">
+						<input type="password" class="form-control" placeholder="密码...">
+					</div>
+					<button type="submit" class="btn btn-default">登录</button>
+		</div>
+	</nav>
+	<!--左列表-->
+	<div class="col-md-2">
+		<ul class="nav nav-pills nav-stacked" role="tablist">
+			<li class="active">  <a href="#">首页</a></li>
+		</ul>
+		<ul class="list-unstyled">
+			<li><a href="#">信息建立</a></li>
+			<li><a href="#">信息查询</a></li>
+			<li><a href="#">信息管理</a></li>
+		</ul>
+		<ul class="list-unstyled">
+			<li><a href="#">设置</a></li>
+			<li><a href="#">帮助</a></li>
+		</ul>
+	</div>
+	<!--右列表-->
+	<div class="col-md-10">
+		<!--按钮栏-->
+		<div class="sbf">
+			<p>管理控制台</p>
+			<button type="button" class="btn btn-default">操作1</button>
+			<button type="button" class="btn btn-primary">操作2</button>
+			<button type="button" class="btn btn-success">操作3</button>
+			<button type="button" class="btn btn-info">操作4</button>
+			<button type="button" class="btn btn-warning">操作5</button>
+			<button type="button" class="btn btn-danger">操作6</button>
+		</div>
+		<!--表格栏1-->
+			<div class="col-md-6" style="margin-top: 20px; ">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h4 class="list-group-item-heading">入门网站包</h4>
+					</div>
+					<div class="panel-body">
+						<div class="xk">
+							<div class="alert alert-success">提示您的订单（2014001）已经审批通过！</div>
+							<div class="alert alert-danger">提示您的订单（2014002）被打回！</div>
+							<div class="alert alert-warning">提示您的订单（2013001）客户付款延迟！</div>
+						</div>
+					</div>
+				</div>
+			<!--表格栏2-->
+				<div class="panel panel-primary"style="margin-top: 30px;">
+					<div class="panel-heading">
+						<h4 class="list-group-item-heading">最新订单</h4>
+					</div>
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>产品</th>
+								<th>数量</th>
+								<th>总金额</th>
+								<th>业务员</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>Apple Macbook air</td>
+								<td>10</td>
+								<td>80000</td>
+								<td>王小贱</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>Apple iPad</td>
+								<td>20</td>
+								<td>65000</td>
+								<td>易开花</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>Apple Macbook Pro</td>
+								<td>5</td>
+								<td>50000</td>
+								<td>刘老根</td>
+							</tr>
+						</tbody>
+					</table>
+					<p style="padding-top: 10px;padding-left: 5px;"><button type="button" class="btn btn-primary btn-sm">查看详情>></button></p>
+				</div>
+			</div>
+
+			<div class="col-md-6" style="margin-top: 20px;">
+				<!--表格栏3-->
+				<div class="panel panel-primary" style="margin-left: 10px; ">
+					<div class="panel-heading">
+						<h4 class="list-group-item-heading">我的任务</h4>
+					</div>
+					<ul class="nav nav-pills lb" style="max-width: 548px;margin: 20px;">
+						<li class="bj">
+						<a href="#"><span class="badge pull-right">42</span>首页</a>
+						</li>
+						<li class="bj">
+						<a href="#"><span class="badge pull-right">20</span>简介</a>
+						</li >
+						<li class="bj">
+						<a href="#"><span class="badge pull-right">10</span>消息</a>
+						</li>
+					</ul>
+				</div>
+				<!--表格栏4-->
+				<div class="panel panel-primary" style="margin-left: 10px; margin-top: 82px;">
+					<div class="panel-heading">
+						<h4 class="list-group-item-heading">入门网站包</h4>
+					</div>
+					<div style="margin: 10px;">
+						<button type="button" class="btn btn-primary"style="margin-bottom: 10px;">水井挖掘工程</button>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="60"aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+								<span class="sr-only">40% 完成</span>
+							</div>
+						</div>
+						<button type="button" class="btn btn-danger"style="margin-bottom: 10px;">基建工程</button>
+						<div class="progress">
+							<div class="progress-bar progress-bar-danger" role="progressbar"aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"style="width: 80%;">
+								<span class="sr-only">80% 完成（危险）</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+</body>
+</html>

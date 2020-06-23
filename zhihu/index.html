@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>知乎</title>
+	<link href="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+	<script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.js"></script>
+	<script src="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/js/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/public.css"/>
+</head>
+<body>
+	<div class="k">
+		<div class="logo">
+			<img src="img/zh.png" width="128px" height="81px"  />
+		</div>
+		<div class="dlk">
+			<div class="dk">
+				<div>
+					<div id="one1" onclick="setTab('one',1,2)" class="hover">免密码登录</div>
+					<div id="one2" onclick="setTab('one',2,2)">密码登录</div>
+				</div>
+				<div id="con_one_1">
+					<div class="srk1">
+						<div class="dropdown"style="float: left;">
+							<button type="button" id="dropdownMenu1" data-toggle="dropdown">
+							中国 +86
+							<span class="caret" style="margin-left: 5px;"></span>
+							</button>
+							<ul class="dropdown-menu" >
+								<li><a href="#">美国 +1</a></li>
+							    <li><a href="#">日本 +81</a></li>
+							    <li><a href="#">中国香港 +852</a></li>
+							    <li><a href="#">中国澳门 +853</a></li>
+							</ul>
+						</div>
+						<div style="float: left;width: 1px;height: 22px; margin: 13px 12px;background: #ebebeb;">&nbsp;</div>
+						<div class="sjh">
+							<input type="text"  placeholder="手机号">
+						</div> 
+					</div>
+					<div class="srk2">
+						<div class="dxm">
+							<input type="text"  placeholder="请输入短信验证码" >
+							<a class="yzm" >获取短信验证码</a>
+						</div>
+					</div>
+					<div class="srk3">
+						<a class="yzm">接收语音验证码</a>
+					</div>
+					
+				</div>
+				<div id="con_one_2" class="s">
+					<div class="srk1">
+							<div class="dxm">
+							<input type="text"  placeholder="手机号或邮箱" >
+						    </div>
+						</div>
+					<div class="srk2">
+							<div class="dxm">
+								<input type="text"  placeholder="密码" >
+						    </div>
+						</div>
+					<div class="srk3">
+							<a class="yzm" style="color: #175199; margin-right: 180px;">海外手机号登录</a>
+							<a class="yzm">忘记密码？</a>
+						</div>
+				</div>
+			    <button type="button" class="btn btn-primary" >注册/登录</button>
+			    <div class="zc">
+			    	<div style="width: 273px; height: 33.6px;float: left;">
+			    		<div>未注册手机验证后自动登录</div>
+					    <div>注册即代表同意《知乎协议》《隐私保护指引》</div>
+			    	</div>
+			    	<a href="#" style=" margin-left: 10px; height: 33.6px;line-height: 33.6px;text-align: center;">注册机构号</a>
+			    </div>
+			</div>
+			
+			<div class="sj">
+				<span>社交账号登录</span>
+				<span>
+						<nav class="navbar">
+							<img alt="QQ" src="img/qq.png">QQ
+						</nav>
+						<nav class="navbar">
+							<img alt="微信" src="img/wx.png">微信
+						</nav>
+						<nav class="navbar">
+							<img alt="微博" src="img/wb.png">微博
+						</nav>
+				</span>
+			</div>
+			<div class="xz">
+				<nav style="height: 42px;line-height: 42px;text-align: center;">
+					<img alt="知乎" src="img/z.png"width="20px" >下载知乎 App
+				</nav>
+			</div>
+		</div>
+		
+	</div>
+	<div class="db">
+			<div > <a href="#">知乎专栏 </a>  <a href="#">圆桌</a> <a href="#">发现</a> <a href="#">移动应用</a> <a href="#">联系我们</a> <a href="#">来知乎工作</a> <a href="#">注册机构</a>  </div>
+			<div>© 2019 知乎 <a href="#">京 ICP 证 110745 号</a> <a href="#"> <img src="img/gh.png" />京公网安备 11010802010035 号 </a> <a href="#">出版物经营许可证</a> </div>
+			<div> <a href="#">侵权举报</a> <a href="#">网上有害信息举报专区</a> <a href="#">儿童色情信息举报专区</a> <a href="#">违法和不良信息举报：010-82716601</a></div>
+	</div>
+</body>
+<script type="text/javascript">
+	function setTab(name,cursel,n){
+		for(i=1;i<=n;i++){
+			var menu=document.getElementById(name+i);
+			var con=document.getElementById("con_"+name+"_"+i);
+			menu.className=i==cursel?"hover":"";
+			con.style.display=i==cursel?"block":"none";
+		}
+	}
+</script>
+</html>

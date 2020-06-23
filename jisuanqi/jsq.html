@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>计算器</title>
+	
+</head>
+<style type="text/css">
+	*{margin: 0; padding: 0;}
+	/*计算器整体*/
+	.counter{width:400px;height: 490px;background-color: #f2f2f2;border: 1px solid #c2c3c6;margin: 50px auto;}
+	/*显示框*/
+	#xsk{height: 70px;width: 340px;background-color: #323232;border: none;margin: 30px;color: #fff;font: 700 30px "微软雅黑";}
+	/*功能区*/
+	.funct{padding: 0 30px; position: relative;}
+	/*按钮样式*/
+	.funct input{height: 40px;width: 60px;margin: 10px 10px; font: 400 20px "微软雅黑";}
+	/*归零按钮样式*/
+	.funct #del{width: 145px;}
+	/* -+=. 浮动按钮 */
+	#deng,#dian,#jia,#jian{position: absolute;right: 0px;bottom: 0px;}
+	/*减号位置*/
+	#jian {right: 34px; top: 60px;}
+	/*加号位置*/
+	#jia {right: 34px; top: 120px;}
+	/*等号位置*/
+	#deng {height: 100px;right: 34px;bottom: 0px;}
+	/*小数点位置*/
+	#dian {right: 120px;bottom: 0px;}
+	/*0*/
+	#ling {width: 145px;}
+	/*数字区*/
+	.numb{width: 280px;}
+
+</style>
+<body>
+	<div class="counter">
+		<input type="text" id="xsk" />
+		<div class="funct">
+			<input type="button" id="del" onclick="clear()" value="Del" />
+			<input type="button" id="chu" onclick="numb('/')" value="÷" />
+			<input type="button" id="cheng" onclick="numb('*')" value="×" />
+			<input type="button" id="jia" onclick="numb('+')" value="+" />
+			<input type="button" id="jian" onclick="numb('-')" value="-" />
+			<input type="button" id="dian" onclick="numb('.')" value="." />
+			<input type="button" id="deng" onclick="result()" value="=" />
+
+			<div class="numb">
+				<input type="button" id="one" onclick="numb(1)" value="1" />
+				<input type="button" id="two" onclick="numb(2)" value="2" />
+				<input type="button" id="three" onclick="numb(3)" value="3" />
+				<input type="button" id="four" onclick="numb(4)" value="4" />
+				<input type="button" id="five" onclick="numb(5)" value="5" />
+				<input type="button" id="six" onclick="numb(6)" value="6" />
+				<input type="button" id="seven" onclick="numb(7)" value="7" />
+				<input type="button" id="eight" onclick="numb(8)" value="8" />
+				<input type="button" id="nine" onclick="numb(9)" value="9" />
+				<input type="button" id="ling" onclick="numb(0)" value="0" />
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	var numresult;
+	var str;
+	function numb(numbs){
+		str=document.getElementById("xsk");
+		str.value=str.value+numbs;
+	}
+	function clear(){
+		str=document.getElementById("xsk");
+		str.value="";
+        
+//      location.replace(location);
+	}
+	function result(){
+		str=document.getElementById("xsk");
+		numresult=eval(str.value);
+		str.value=numresult;
+	}
+</script>
+
+</html>

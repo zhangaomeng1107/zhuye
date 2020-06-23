@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Document</title>
+</head>
+<style type="text/css">
+    body {text-align: center;}
+</style>
+<body>
+	<div>
+        <p>欢迎<span id="username"></span>来到首页</p>
+    </div>
+	<!--欢迎 <span id="span1"></span> 来到首页
+	<script type="text/javascript">
+		var a=sessionStorage.getItem("a");
+		document.getElementById('span1').innerText=a;
+	</script>-->
+	
+</body>
+<script type="text/javascript">
+    var username = document.getElementById("username");
+    window.onload = function(){
+        if(localStorage.username.length>1){
+            username.innerHTML = localStorage.username; //给标签加用户名
+        }
+    }
+</script>
+</html>

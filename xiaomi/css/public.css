@@ -1,0 +1,133 @@
+*{margin: 0;padding: 0;}
+a{text-decoration: none;}
+li{list-style: none;}
+body{font: 14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;}
+.top{position: relative;z-index: 30;height: 40px;font-size: 12px;color: #b0b0b0;background: #333;}
+.top a{color: #b0b0b0;display: inline-block;}
+.top a:hover{color: #fff;}
+.top span{margin: 0px 2px;color: #424242;}
+.container{ width: 1226px;margin-right: auto; margin-left: auto;}
+.zt{line-height: 40px;height: 40px;text-align: center;}
+.top_left{float: left;}
+.top_center{float: right;margin-right: 30px;}
+.top_right{ width: 120px; float: right; background-color: #424242;}
+.top_right a{display: block;}
+.gwc_list{width: 316px;height: 100px;background: #fff;box-shadow: 0 2px 10px rgba(0,0,0,.15);position: absolute; right: 155px;}
+.top_right a:hover{color: #ff6700;background-color: #fff;}
+/*导航*/
+.dh{height: 100px;}
+.dh_logo{float: left;width: 62px;margin-top: 22px;}
+.logo{height: 55px;width: 55px;background: url(../img/logo2.png) no-repeat #ff6700 50% 50%;display: block;}
+.dh_list{width: 700px;float: left;height: 88px;text-align: center;line-height: 100px;margin-left: 150px;}
+.dh_list ul li{float: left;}
+.dh_list a{padding: 26px 10px 38px;color: #333;}
+.ssk{float: right;width: 274px;margin-top: 25px;font-size: 18px;color: #616161;}
+.ssk input{border: 1px solid #e0e0e0;height: 48px;width: 223px;}
+.ssk .iconsousuo{border:  1px solid #e0e0e0;height: 48px;width: 48px;float: right;text-align: center;line-height: 48px;border-left: none;}
+.ssk_text{z-index: 2;text-align: right;position: relative;top: -40px;right: 60px;}
+.ssk_text a{display: inline-block;margin-left: 5px;padding: 0 5px;font-size: 12px;background: #eee;color: #757575;}
+.ssk_text a:hover{background-color: #ff6700;color: #fff;}
+/*广告*/
+.gg_list{width: 235px;position: absolute;top: 140px;}
+.gg_list ul{height: 380px;border: 0;background: rgba(105,101,101,.6);padding: 20px 20px;height: 420px;}
+.gg_list ul li{height: 42px;line-height: 42px;}
+.gg_list ul li a{color: #fff;font-size: 14px;}
+.gg_list em {float: right;}
+.gg_tu{height: 170px;margin: 15px 0px;}
+.tu1{width: 234px;float: left;}
+.tu1 ul{list-style-type: none;font-size: 12px;text-align: center;padding: 3px;background: rgb(95, 87, 80);height: 164px;}
+.tu1 ul li{float: left;width: 70px;height: 82px;padding: 0px 3px;display:  block;}
+.tu1 ul li a{color: rgb(255, 255, 255);padding-top: 18px;display: block;}
+.tu1 ul li img{display: block;width: 24px;height: 24px;margin: 0px auto 4px;}
+.tu2{width: 978px;float: left;margin-left: 14px;}
+.tu2 ul li{float: left;width: 316px;margin-left: 10px;}
+.tu2 ul li img{width: 316px;height: 170px;}
+/*中间部分*/
+.smiddle{background: #f5f5f5;margin-top: 15px;}
+.zt_1{margin-bottom: 22px;height: 398px;}
+.zt_2,.zt_3,.zt_4,.zt_5,.zt_6,.zt_7{margin-bottom: 8px;height: 686px;}
+.xmsg{height: 340px;}
+.sj,.jd,.zn,.dp,.pj,.zb{height: 628px;}
+.row{margin-left: -14px;height: 628px;}
+/*中间部分所有标题h2*/
+.title{height: 58px;line-height: 58px;}
+.title h2{font-size: 22px;font-weight: 200;color: rgb(51, 51, 51);margin: 0px;float: left;}
+
+.jt{float: right;}
+.jt em{display: inline-block;width: 24px;line-height: 16px;color: rgb(176, 176, 176);text-align: center;cursor: pointer;padding: 3px 5px;border: 1px solid rgb(224,224,224);margin: -0.2em;}
+
+.more{float: right;}
+.more a{font-size: 16px;line-height: 58px;color: #424242;}
+.more ul li{margin: 0 0 0 30px;display: inline-block;font-size: 16px;}
+
+/*小米闪购的内容*/
+.ms_time{height: 300px;width: 234px;padding-top: 39px;text-align: center;background: rgb(241, 237, 237);border-top: 1px solid rgb(229,57,53);float: left;margin-left: 14px;}
+.jichang{font-size: 21px;color: rgb(239, 58, 59);padding-top: 15px;}
+.jieshu{color: rgba(0, 0, 0, 0.54);font-size: 15px;}
+.djs{width: 168px;margin: 28px auto 0px;}
+.djs span{width: 46px;height: 46px;color: rgb(255, 255, 255);font-size: 24px;line-height: 46px;float: left;background: rgb(96, 87, 81);}
+.djs i{width: 15px;float: left;height: 46px;line-height: 46px;color: rgb(96, 87, 81);font-size: 28px;font-style: normal;}
+.ms_list{width: 978px; float: right;margin-left: 14px;height: 340px;}
+.ms_list ul{width: 978px;height: 340px;}
+.ms_list ul li{float: left;text-align: center;background: #fff;width: 234px;margin-right: 14px;height: 340px;}
+.ms_list ul li a{display: block;height: 300px;padding-top: 39px;}
+/*所有p段落 h3 的字*/
+.smallt{display: block;width: 160px;margin: 0px auto 22px;}
+.smallt img{width: 160px;height: 160px;}
+.ptext{height: 18px;font-size: 12px;text-overflow: ellipsis;color: rgb(176, 176, 176);white-space: nowrap;margin: 0px 20px 12px;overflow: hidden;}
+.h3text{font-size: 14px;font-weight: 400;color: rgb(33, 33, 33);margin: 0px 20px 3px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.qian{color: #ff6700;}
+.qian span{color: #b0b0b0;text-decoration: line-through;}
+/*所有中间部分的长条广告图*/
+.xiaomi{height: 120px;margin: 22px 0;}
+.xiaomi img{height: 120px;width: 1226px;}
+
+/*手机广告条*/
+.sj_left{float: left;margin-left: 14px;}
+.sj_right,.right{float: right;width: 978px;margin-left: 14px;}
+.sj_right ul,.right ul{height: 614px;width: 992px;margin: 0 0 -14px -14px;}
+.sj_right ul li,.right ul li{float: left;text-align: center;background: rgb(255, 255, 255);width: 234px;margin-left: 14px;margin-bottom: 14px;padding: 20px 0px;height: 260px;}
+/*家电以下所有的广告条*/
+.left{float: left;margin-left: 14px;}
+.left ul{margin: 0 0 -14px -14px;}
+.left ul li{margin-bottom: 14px;margin-left: 14px;height: 300px;}
+.left ul li img{width: 234px;height: 300px;}
+/*右下角两个框*/
+.xk1{height: 93px;padding-top: 50px;width: 234px;margin-bottom: 14px;background: #fff;float: left;}
+.xk1 img{width: 80px;height: 80px;float: right;margin-top: -20px;}
+.xk1 h3{margin: -10px 110px 5px 30px;font-size: 14px;font-weight: 400;color: #333;}
+.xk1 p{margin-left: 30px;}
+.xk2{float: left;width: 234px;margin-bottom: 14px;background: #fff;height: 93px;padding-top: 50px;}
+.lagd{display: block;margin: 0 110px 0 30px;font-size: 18px;color: #333;}
+.lagd small{display: block;font-size: 12px;color: #757575;}
+.yjt em{font-size: 48px;line-height: 48px;float: right;color: #ff6700;margin-right: 30px;}
+
+/*视频*/
+.sp{width: 1226px;height: 299px;}
+.sp ul{width: 1240px;height: 285px;margin-left: 14px;}
+.sp ul li{float: left;width: 296px;height: 285px;margin-right: 14px;margin-bottom: 14px;text-align: center;background: #fff;}
+.sp1{    width: 296px;height: 180px;margin: 0 0 28px;}
+.sp img{width: 296px;height: 180px;}
+.sp span{ display: block; position: relative;left: 20px;bottom: 40px;width: 32px;height: 20px;border: 2px solid #fff;border-radius: 12px;background-color: rgba(0,0,0,.6);color: #fff;}
+ 
+/*底部*/
+.fuwu{padding: 27px 0;border-bottom: 1px solid #e0e0e0;height: 25px;}
+.fuwu ul li{float: left;width: 19.8%;height: 25px;border-left: 1px solid #e0e0e0;font-size: 16px;line-height: 25px;text-align: center;}
+.fuwu_list {height: 112px;padding: 40px 0px;}
+.fuwu_list dl{float: left;width: 160px;height: 112px;}
+.fuwu_list dl dt{margin: -1px 0 26px;font-size: 14px;line-height: 1.25;color: #424242;}
+.fuwu_list dl dd{margin: 10px 0 0;font-size: 12px;}
+.fuwu_list a{color: #616161;}
+.fuwu_tel{float: right;width: 251px;height: 112px;border-left: 1px solid #e0e0e0;text-align: center;color: #616161;}
+.fuwu_tel .tel{margin: 0 0 5px;font-size: 22px;line-height: 1;color: #ff6700;}
+.fuwu_tel a{border-color: #ff6700;background: #fff;color: #ff6700;border: 1px solid #ff6700;display: inline-block; width: 118px;height: 28px;font-size: 12px;line-height: 28px;}
+.fuwu a{color: #616161;}
+/*底部2*/
+.bottom{height: 188px;padding: 30px 0px;background-color: #f5f5f5;}
+.bottom_text{color: #b0b0b0;padding-left: 67px;}
+.bottom_text p{font-size: 12px;color: #b0b0b0;line-height: 18px;}
+.wenzi a{color: #757575;}
+.wenzi2 a{color: #b0b0b0;}
+.bottom_tu{height: 28px;margin: 4px 0 0;padding-left: 67px;}
+.bottom_tu img{height: 28px;margin-bottom: 15px;}
+.diz{margin: 30px auto 0;width: 267px;height: 19px;background-image: url(../img/wfses.png);}

@@ -1,0 +1,25 @@
+html,body{height: 100%;}
+*{margin: 0; padding: 0;}
+.main{width: 100%;height: 100%;background-size: cover;overflow: hidden;position: relative;}
+.main ul{width: 3840px;height: 100%;position: absolute;top: 0; left: 0;animation: mymove 50s infinite;}
+@keyframes mymove{
+	from{left: -1920px;}
+	to{left: 0px;}
+}
+.main ul li{width: 100%; height: 100%;background: url(../img/bg.jpg);float: left;margin-left: -1920;}
+.wk {width: 200px;height: 180px;background: url(../img/1.png) no-repeat 0 0;position: absolute;top: 50%;left: 20%;z-index: 9999; animation: wk 1s steps(8) infinite;}
+@keyframes wk{
+	to{background-position: -1600px 0;}
+}
+.bj {width: 200px;height: 180px;background: url(../img/2.png) no-repeat 0 0;position: absolute;top: 50%;left: 40%;z-index: 9999;animation: bj 1s steps(8) infinite;}
+@keyframes bj{
+	to{background-position: -1600px 0;}
+}
+.ts{width: 170px;height: 240px;background: url(../img/3.png) no-repeat 0 0;position: absolute;top: 50%;left: 60%;z-index: 9999;animation: ts 1s steps(8) infinite;}
+@keyframes ts{
+	to{background-position: -1360px 0;}
+}
+.ss{width: 210px;height: 200px;background: url(../img/4.png) no-repeat 0 0;position: absolute;top: 50%;left: 80%;z-index: 9999;animation: ss 1s steps(8) infinite;}
+@keyframes ss{
+	to{background-position: -1680px 0;}
+}
